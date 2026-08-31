@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const photos = [
-  { src: '/photos/photo1.jpg', caption: '// main()' },
-  { src: '/photos/photo2.jpg', caption: '// travelling.exe' },
-  { src: '/photos/photo3.jpg', caption: '// off_duty()' }
+  { src: `${import.meta.env.BASE_URL}photos/photo1.jpg`, caption: '// main()' },
+  { src: `${import.meta.env.BASE_URL}photos/photo2.jpg`, caption: '// travelling.exe' },
+  { src: `${import.meta.env.BASE_URL}photos/photo3.jpg`, caption: '// off_duty()' }
 ];
 
 export default function PhotoCarousel() {
