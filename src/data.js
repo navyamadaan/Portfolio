@@ -9,7 +9,7 @@ export const experience = [
     role: 'VP of Academics & Equity',
     company: 'Sheridan Student Union',
     meta: null,
-    logo: '/logos/ssu.png',
+    logo: `${import.meta.env.BASE_URL}logos/ssu.png`,
     bullets: [
       'Represent student academic interests and equity initiatives across campus',
       'Collaborate with faculty and administration on academic policy',
@@ -21,7 +21,7 @@ export const experience = [
     role: 'Full Stack Web Developer',
     company: 'Sheridan TechBiz Society',
     meta: null,
-    logo: '/logos/sheridan.jpeg',
+    logo: `${import.meta.env.BASE_URL}logos/sheridan.jpeg`,
     bullets: [
       'Built and maintained full-stack features using React and Next.js',
       'Collaborated with a team through Git version control',
@@ -33,7 +33,7 @@ export const experience = [
     role: 'Guest Services Supervisor',
     company: 'Pilot Flying J',
     meta: 'Full-time · Promoted from Cash Department Head',
-    logo: '/logos/pilot.jpeg',
+    logo: `${import.meta.env.BASE_URL}logos/pilot.jpeg`,
     bullets: [
       'Supervise guest services operations and lead a team on shift',
       'Promoted from Cash Department Head after demonstrating strong leadership',
@@ -92,7 +92,11 @@ export const projects = [
     title: 'SwiftParkAI — AI-Powered Smart Parking Platform',
     category: 'development',
     period: 'Jun 2026 – Aug 2026',
-    images: ['/projects/swift1.jpeg', '/projects/swift2.png', '/projects/swift3.png'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/swift1.jpeg`,
+      `${import.meta.env.BASE_URL}projects/swift2.png`,
+      `${import.meta.env.BASE_URL}projects/swift3.png`
+    ],
     visual: 'React · Node.js · Gemini API',
     glow: 'var(--blue)',
     desc: 'An end-to-end smart parking system for mall operations — ESP32 sensors stream live occupancy through an Express/MongoDB pipeline to a React dashboard in under 5 seconds, with K-Means clustering, a Gemini-powered Q&A assistant, and a full Recharts analytics suite, deployed on Vercel and Render.',
@@ -103,7 +107,10 @@ export const projects = [
     title: 'Agentic-RAG Attrition CoPilot',
     category: 'ai-ml',
     period: null,
-    images: ['/projects/agentic1.jpeg', '/projects/agentic2.jpeg'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/agentic1.jpeg`,
+      `${import.meta.env.BASE_URL}projects/agentic2.jpeg`
+    ],
     visual: 'LangChain · XGBoost · ChromaDB',
     glow: 'var(--purple)',
     desc: 'A decision support system for IBM HR that blends a predictive XGBoost attrition model with an Agentic-RAG layer — built with LangChain and ChromaDB — so an autonomous agent can query internal HR policy docs and generate compliant retention plans, deployed on Streamlit Cloud.',
@@ -114,7 +121,10 @@ export const projects = [
     title: 'Customer Lifetime Value Analysis (CLV)',
     category: 'data-science',
     period: null,
-    images: ['/projects/clv1.png', '/projects/clv2.png'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/clv1.png`,
+      `${import.meta.env.BASE_URL}projects/clv2.png`
+    ],
     visual: 'Power BI · Customer Segmentation',
     glow: 'var(--teal)',
     desc: 'Analyzes retail transaction data to estimate Customer Lifetime Value, segment customers by purchasing behavior, and surface churn and retention insights through an interactive Power BI dashboard.',
@@ -125,7 +135,11 @@ export const projects = [
     title: 'Real-Time Fraud Analytics System',
     category: 'ai-ml',
     period: null,
-    images: ['/projects/fraud1.jpeg', '/projects/fraud2.png', '/projects/fraud3.png'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/fraud1.jpeg`,
+      `${import.meta.env.BASE_URL}projects/fraud2.png`,
+      `${import.meta.env.BASE_URL}projects/fraud3.png`
+    ],
     visual: 'Isolation Forest · SHAP · FastAPI',
     glow: 'var(--teal)',
     desc: 'An end-to-end fraud detection pipeline simulating real-time transaction monitoring — an Isolation Forest model catches patterns like impossible-travel and card-testing velocity attacks with 94% recall, explained per-transaction with SHAP, and served through FastAPI + Streamlit in a one-command Docker deployment.',
@@ -136,7 +150,11 @@ export const projects = [
     title: 'Autonomous Driving Perception System',
     category: 'ai-ml',
     period: null,
-    images: ['/projects/drive1.gif', '/projects/drive2.gif', '/projects/drive3.jpeg'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/drive1.gif`,
+      `${import.meta.env.BASE_URL}projects/drive2.gif`,
+      `${import.meta.env.BASE_URL}projects/drive3.jpeg`
+    ],
     visual: 'YOLOv8 · ByteTrack · MiDaS',
     glow: 'var(--purple)',
     desc: 'A real-time perception pipeline for autonomous driving — combining YOLOv8 object detection, ByteTrack multi-object tracking, and MiDaS monocular depth estimation to detect, track, and estimate distance to objects from a single camera feed.',
@@ -147,7 +165,10 @@ export const projects = [
     title: 'Snake — C# Console Game',
     category: 'development',
     period: null,
-    images: ['/projects/snake1.jpeg', '/projects/snake2.jpg'],
+    images: [
+      `${import.meta.env.BASE_URL}projects/snake1.jpeg`,
+      `${import.meta.env.BASE_URL}projects/snake2.jpg`
+    ],
     visual: 'C# · Console App',
     glow: 'var(--blue)',
     desc: 'A classic Snake game built as a C# console application, handling real-time input, grid-based movement, collision detection, and score tracking entirely in the terminal.',
